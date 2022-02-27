@@ -6,16 +6,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <title>Sign-up-Form</title>
     </head>
 
     <body>
-        <header>a</header>
+        <header>
+            <div class="service">
+                This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, commodi!
+            </div>
+            <div class="service-description">
+                Sign up now to get started.
+            </div>
+        </header>
         <div class="background-container">
             <div class="logo-container"><img class="logo" src="images/odin-lined.png"></div>
         </div>
-        <div>c</div>
-        <footer>d</footer>
+        <form>
+            <div class="form-with-text">
+
+                <div class="form-container">
+                    <div class="form-text">Let's do this!</div>
+
+                    <div class="form-items item1">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div class="form-items item2">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <div class="form-items item3">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="fname">
+                    </div>
+                    <div class="form-items item4">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="number" id="number" name="lname">
+                    </div>
+                    <div class="form-items item5">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="fname">
+                    </div>
+                    <div class="form-items item6">
+                        <label for="cPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="cPassword" name="lname">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <button>Create account</button>
+                <div>Already have an account?<a href="#">Log in</a></div>
+            </footer>
+        </form>
     </body>
 
 </html>

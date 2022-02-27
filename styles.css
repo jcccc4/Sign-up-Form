@@ -1,3 +1,7 @@
+:root{
+    color: #333d29;
+    font-family: 'Roboto', sans-serif;
+}
 html{
     margin: 0;
     padding: 0;
@@ -7,27 +11,52 @@ body{
     margin: 0;
     padding: 0;
     display:grid;
-    grid-template-columns: 800px auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3,calc(100% / 3) );
     height: 100%;
 }
 
 header{
-    background-color: blueviolet;
+    background-color: #68b0ab;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    
 }
+header .service{
+    font-size: 20px;
+}
+
+.service{
+    padding: 0;
+    margin: 0;
+}
+.service-container{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
 .background-container{
     background-image: url("images/background.jpg");
-    background-color: aqua;
+
     grid-area: 1/1/4;
     position: relative;
+    
 }
 
 .background{
     position: relative;
     width:100%;
     height:100%;
-    object-fit:cover;       
+    object-fit:cover;
+           
 }
+
 .logo-container{
     position: absolute;
     background-color: rgba(128, 128, 128, 0.644);
@@ -37,14 +66,69 @@ header{
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: ce;
+    justify-content: center;
+    
 }
 .logo{
     height: 90%;
+    
 }
-div{
-    background-color: aquamarine;
+.form-with-text{
+    height: 100%;
+    background-color: #c6dabf;
+    box-shadow: 5px 10px 10px grey;
+    position:relative;
+    z-index:999;
 }
+.form-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% repeat(3, 30%);
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.form-items>label{
+    width: 90%;
+}
+
+.form-text{
+    padding-left: 10px;
+    grid-column: 1/3;
+    align-self: center;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+} 
+
+button:active {
+  background-color: #66df6a; /* Green */
+}
+
 footer{
-    background-color: blanchedalmond;
+    background-color: #68b0ab;
+    height: 100%;
+}
+footer div{
+   margin-left: 25px;
 }
